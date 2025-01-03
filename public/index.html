@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAKAM - Türkiye Plaka Tahmin Oyunu</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="game-container container">
+      <div class="header">
+        <div class="timer">
+          <i class="fas fa-clock"></i> Süre:
+          <span id="time" class="badge bg-warning">10</span>
+        </div>
+        <div class="score-container">
+          <div class="score">
+            <i class="fas fa-star"></i> Skor:
+            <span id="score" class="badge bg-success">0</span>
+          </div>
+          <div class="question-count">
+            <i class="fas fa-question-circle"></i> Soru:
+            <span id="current-question" class="badge bg-primary">0</span>/15
+          </div>
+        </div>
+      </div>
+
+      <div class="game-area">
+        <div class="plaka animate__animated animate__bounceIn" id="plaka">
+          06
+        </div>
+        <div class="options">
+          <button
+            class="option btn btn-outline-primary animate__animated animate__fadeIn"
+            data-id="1"
+          ></button>
+          <button
+            class="option btn btn-outline-primary animate__animated animate__fadeIn"
+            data-id="2"
+          ></button>
+          <button
+            class="option btn btn-outline-primary animate__animated animate__fadeIn"
+            data-id="3"
+          ></button>
+          <button
+            class="option btn btn-outline-primary animate__animated animate__fadeIn"
+            data-id="4"
+          ></button>
+        </div>
+      </div>
+
+      <div class="start-screen" id="start-screen">
+        <h1 class="animate__animated animate__bounceInDown">PLAKAM</h1>
+        <p class="lead animate__animated animate__fadeIn">
+          Türkiye'nin plakalarını tahmin et!
+        </p>
+        <button
+          id="start-button"
+          class="btn btn-success btn-lg animate__animated animate__pulse animate__infinite"
+        >
+          <i class="fas fa-play"></i> Oyuna Başla
+        </button>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS ve Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
