@@ -1,3 +1,7 @@
+# PLAKAM - Türkiye Plaka Tahmin Oyunu
+
+Bu proje, Cursor AI yardımı ile geliştirilmiş bir web tabanlı plaka tahmin oyunudur.
+
 ## Oyun Akışı
 
 1. Kullanıcı "Oyuna Başla" butonuna tıklar
